@@ -7,9 +7,9 @@ output:
     df_print: paged
     toc: 1
     number_sections: true
-header-includes: \usepackage[ngerman]{babel}
+    highlight: tango
 subtitle: Analyse des Beziehungsnetzwerks der Mansonfamilie
-highlight: tango
+header-includes: \usepackage[ngerman]{babel}
 ---
 
 ```{r setup}
