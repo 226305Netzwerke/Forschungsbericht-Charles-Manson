@@ -1,7 +1,3 @@
-
-
-
-
 ---
 title: "226305 Forschungsbericht Charles Manson"
 author: "F. Fuhrmann, <br> E. McGowan, T. Nolte, A. Stete, R. Trslic, A. Veyhl"
@@ -14,7 +10,6 @@ output:
 header-includes: \usepackage[ngerman]{babel}
 subtitle: Analyse des Beziehungsnetzwerks der Mansonfamilie
 highlight: tango
-
 ---
 
 ```{r setup}
@@ -193,10 +188,10 @@ Alle erhobenen Daten wurden von den Gruppenmitgliedern in die Google-Spreadsheet
 Die Materialien für unsere Netzwerkanalyse haben wir breit gefächert ausgewählt, sodass wir eine möglichst große Überschneidung der Ergebnisse erzielen können. Dies gewährleistet eine Kontinuität in der subjektiv dokumentierten Thematik. 
 
 ##  Bereinigung
-Der Datensatz ist unter (https://github.com/thomas5nolte/Manson) verfügbar.
+Der Datensatz ist unter (https://github.com/226305Netzwerke/Forschungsbericht-Charles-Manson) verfügbar.
 
 ##  Codebuch
-Das Codebuch ([https://github.com/thomas5nolte/Manson/blob/master/Codebuch.md](https://github.com/thomas5nolte/Manson/blob/master/Codebuch.md)) beschreibt die Variablen, Relationen und Gewichte des Netzwerks und ist ebenfalls auf Github hinterlegt.
+Das Codebuch ([https://github.com/226305Netzwerke/Forschungsbericht-Charles-Manson/blob/master/Codebuch.md](https://github.com/226305Netzwerke/Forschungsbericht-Charles-Manson/blob/master/Codebuch.md)) beschreibt die Variablen, Relationen und Gewichte des Netzwerks und ist ebenfalls auf Github hinterlegt.
 
 ##  Vorbereitung der IDE
 
@@ -219,14 +214,14 @@ Die Edge- und Nodelisten werden über read.csv von Github geladen und mit dem Pa
 ```{r Einlesung der Daten - Netzwerkprojekt, message=FALSE}
 el_manson <-
   read.csv(
-    "https://raw.githubusercontent.com/thomas5nolte/Manson/master/el_manson.csv",
+    "https://raw.githubusercontent.com/226305Netzwerke/Forschungsbericht-Charles-Manson/master/el_manson.csv",
     header = T,
     as.is = T,
     sep = ","
   )
 nl_manson <-
   read.csv(
-    "https://raw.githubusercontent.com/thomas5nolte/Manson/master/nl_manson.csv",
+    "https://raw.githubusercontent.com/226305Netzwerke/Forschungsbericht-Charles-Manson/master/nl_manson.csv",
     header = T,
     as.is = T,
     sep = ","
@@ -245,14 +240,14 @@ Das Gesamtnetzwerk umfasst 195 Knoten und 636 Beziehungen (siehe igraph-Objekt).
 ```{r Einlesen der Daten - Once upon a time in Hollywood}
 el_hollywood <-
   read.csv(
-    "https://raw.githubusercontent.com/thomas5nolte/Manson/master/el_film.csv",
+    "https://raw.githubusercontent.com/226305Netzwerke/Forschungsbericht-Charles-Manson/master/el_film.csv",
     header = T,
     as.is = T,
     sep = ","
   )
 nl_hollywood <-
   read.csv(
-    "https://raw.githubusercontent.com/thomas5nolte/Manson/master/nl_film.csv",
+    "https://raw.githubusercontent.com/226305Netzwerke/Forschungsbericht-Charles-Manson/master/nl_film.csv",
     header = T,
     as.is = T,
     sep = ","
@@ -365,8 +360,6 @@ reciprocity(hollywood, mode = "ratio")
 Reziprozität meint die Wechselseitigkeit von Beziehungen. Die Reziprozität des Gesamtnetzwerkes aus dem Film beträgt 73,7 %. Diese unterscheidet sich um 19 % zur Realität. Unsere Erhebung ergab eine Reziprozität von 56,7 %. Auch hier kann davon ausgegangen werden, dass die Beziehungen, gerade für einen Spielfilm gestrafft wurden, sodass eine höhere Reziprozität herauskommt. 
 
 ```{r Diameter (Durchmesser) Gesamtnetzwerk}
-# https://igraph.org/r/doc/diameter.html
-
 # Was ist der längste Pfad in einem Netzwerk?
 get.diameter(manson)
 # Welche Knoten sind am weitesten voneinander entfernt?
@@ -623,7 +616,8 @@ Es gibt viele Knoten, die keine Verbindungen zueinander bzw. untereinander haben
 ```{r Reziprozität Mansonfamilie}
 # Berechnung der Reziprozität
 reciprocity(member, mode = "ratio")
-# Der berechnete Wert gibt das Verhältnis von reziproken Beziehungen zu normalen Beziehungen an.
+# Der berechnete Wert gibt das Verhältnis von reziproken Beziehungen 
+# zu normalen Beziehungen an.
 # In diesem Fall sind 90,1% der Beziehungen im Netzwerk reziprok.
 ```
 Das Netzwerk weist eine sehr hohe Reziprozität von 90,1 % auf. 
@@ -634,7 +628,8 @@ degree_member_in <-
 #Hier lässt sich der Knoten mit den meisten Verbindungen finden
 degree_member_out <- degree(member, mode = "OUT")
 which.max(betweenness(member))
-#Da die Console die Ausgabe auf eine gewisse Anzahl Ansgaben begrenzt, muss die Tabelle mit view ausgegeben werden
+#Da die Console die Ausgabe auf eine gewisse Anzahl Ansgaben begrenzt, 
+#muss die Tabelle mit view ausgegeben werden
 ```
 
 ```{r Analyse der Mansonfamilie}
@@ -1034,41 +1029,50 @@ plot(
 
 
 ```{r Mansonfamilie ohne Isolates vs. Ego Netzwerk Manson, fig.height=9, fig.width=16}
-#Uns interessiert das Ego-Netzwerk vom Indegree-King (Charles Manson)
+#Uns interessiert das Ego - Netzwerk vom Indegree - King (Charles Manson)
 
 V(manson)$egos <- ego_size(manson)
 vertex.attributes(manson)$egos
 which.max(vertex.attributes(manson)$egos)
 
-manson_simplify <- delete.edges(manson,  E(manson)[which_multiple(manson, eids = E(manson))]) 
+manson_simplify <-
+  delete.edges(manson,  
+               E(manson)[which_multiple(manson, eids = E(manson))])
 #lässt nur eine Verbindung pro Knoten anzeigen
 
 # erzeugt ein Egonetzwerk
-ego_g <- make_ego_graph(manson_simplify, order = 1, nodes = V(manson_simplify)$name == "Charles Manson", mode ="all")
+ego_g <-
+  make_ego_graph(
+    manson_simplify,
+    order = 1,
+    nodes = V(manson_simplify)$name == "Charles Manson",
+    mode = "all"
+  )
 ego_net <- ego_g[[1]]
 
 #Zuweisungen für das Two-Mode Netzwerk
 V(ego_net)[V(ego_net)$type == 1]$shape <- "circle"
 V(ego_net)[V(ego_net)$type == 2]$shape <- "square"
 
-plot(ego_net,
-     main="Ego-Netzwerk von Charles Manson",
-     rescale = TRUE,
-     asp = 0,
-     layout = layout_nicely,
-     edge.curved = .10,
-     vertex.size = 2,
-     #vertex.size = degree(ego_net)/10,
-     vertex.color = "darkred",
-     vertex.frame.color = NA,
-     vertex.label.dist = .3,
-     vertex.label.family = "Helvetica",
-     vertex.label.color = "black",
-     vertex.label.font = 1,
-     vertex.label.degree = pi/2,
-     edge.color = gray(0.6, alpha=0.9),
-     edge.arrow.size = .4
-     )
+plot(
+  ego_net,
+  main = "Ego-Netzwerk von Charles Manson",
+  rescale = TRUE,
+  asp = 0,
+  layout = layout_nicely,
+  edge.curved = .10,
+  vertex.size = 2,
+  #vertex.size = degree(ego_net)/10,
+  vertex.color = "darkred",
+  vertex.frame.color = NA,
+  vertex.label.dist = .3,
+  vertex.label.family = "Helvetica",
+  vertex.label.color = "black",
+  vertex.label.font = 1,
+  vertex.label.degree = pi / 2,
+  edge.color = gray(0.6, alpha = 0.9),
+  edge.arrow.size = .4
+)
 ``` 
 
 ```{r Wie stehen die Frauen zu Manson}
@@ -1608,25 +1612,66 @@ list.edge.attributes(hollywood)
 # edge.attributes(hollywood)
 ```
 
-Das Netzwerk hat nach dem Codebuch [https://github.com/thomas5nolte/Manson/blob/master/Codebuch.md](https://github.com/thomas5nolte/Manson/blob/master/Codebuch.md) folgende Attribute:
+Das Netzwerk hat nach dem Codebuch [https://github.com/226305Netzwerke/Forschungsbericht-Charles-Manson/blob/master/Codebuch.md](https://github.com/226305Netzwerke/Forschungsbericht-Charles-Manson/blob/master/Codebuch.md) folgende Attribute:
 
 *Vertex-Attribute*
-- name: Name des Knotens
-- type: 1 = Mensch, 2 = Gruppierung
-- sex:  1 = männlich, 2 = weiblich
-- date_of_birth: DD-MM-YYYY
-- date_of_death: DD-MM-YYYY
-- type_of_death: 1 = lebend, 2 = natürlicher Tod, 3 = ermordet, 4 = Selbstmord, 5 = Verschwunden genaueres unbekannt
-- power: Definiert als Macht des Akteurs (1 = sehr gering, 5 = sehr hoch)
-- relation_to_murder: 1 = hat niemanden getötet, 2 = war bei Mord anwesend, 3 = hat jemanden getötet
-- member: Manson Family Member: 1 = Nein, 2 = Ja
+- name: 
+
+Name des Knotens
+
+- type: 
+
+1 = Mensch
+2 = Gruppierung
+
+- sex:  
+
+1 = männlich
+2 = weiblich
+
+- date_of_birth: 
+
+DD-MM-YYYY
+
+- date_of_death: 
+
+DD-MM-YYYY
+
+- type_of_death: 
+
+1 = lebend
+
+2 = natürlicher Tod
+
+3 = ermordet
+
+4 = Selbstmord
+
+5 = Verschwunden genaueres unbekannt
+
+- power: 
+
+Definiert als Macht des Akteurs 
+(1 = sehr gering, 5 = sehr hoch)
+
+- relation_to_murder: 
+
+1 = hat niemanden getötet
+2 = war bei Mord anwesend
+3 = hat jemanden getötet
+
+- member: 
+
+Manson Family Member:
+1 = Nein
+2 = Ja
 
 
 Die Vertex-Attribute treffen auf alle Knoten zu.
 
 *Edge-Attribute*
 - relationship: 	
-      Definiert die Art der Beziehung bei multiplexen Netzwerken mit verschiedenen Beziehungsarten. Wenn zwei Arten der Beziehung bestehen, werden        auch zwei Einträge gemacht.
+      Definiert die Art der Beziehung bei multiplexen Netzwerken mit verschiedenen Beziehungsarten. Wenn zwei Arten der Beziehung bestehen, werden auch zwei Einträge gemacht.
       
       1 = Bekanntschaft
 
@@ -1649,14 +1694,14 @@ Die Vertex-Attribute treffen auf alle Knoten zu.
 
 ## Verwendete Datenquellen (Link auf Github Edge- und Nodelist)
 
-+ [Nodelist Manson](https://raw.githubusercontent.com/thomas5nolte/Manson/master/nl_manson.csv)
-+ [Edgelist Manson](https://raw.githubusercontent.com/thomas5nolte/Manson/master/el_manson.csv)
-+ [Nodelist Film](https://raw.githubusercontent.com/thomas5nolte/Manson/master/nl_film.csv)
-+ [Edgelist Film](https://raw.githubusercontent.com/thomas5nolte/Manson/master/el_film.csv)
++ [Nodelist Manson](https://github.com/226305Netzwerke/Forschungsbericht-Charles-Manson/blob/master/nl_manson.csv)
++ [Edgelist Manson](https://github.com/226305Netzwerke/Forschungsbericht-Charles-Manson/blob/master/el_manson.csv)
++ [Nodelist Film](https://github.com/226305Netzwerke/Forschungsbericht-Charles-Manson/blob/master/nl_film.csv)
++ [Edgelist Film](https://github.com/226305Netzwerke/Forschungsbericht-Charles-Manson/blob/master/el_film.csv)
 
 ## Komplettes annotiertes Notebook 
 
-Das Notebook ist unter [https://github.com/thomas5nolte/Manson/blob/master/226305_Forschungsbericht_Charles_Manson.Rmd](https://github.com/thomas5nolte/Manson/blob/master/226305_Forschungsbericht_Charles_Manson.Rmd) erreichbar. 
+Das Notebook ist unter [https://github.com/226305Netzwerke/Forschungsbericht-Charles-Manson/blob/master/226305_Forschungsbericht_Charles_Manson.Rmd](https://github.com/226305Netzwerke/Forschungsbericht-Charles-Manson/blob/master/226305_Forschungsbericht_Charles_Manson.Rmd) erreichbar. 
 
 ## TeilnehmerInnen des Projekts und Arbeitsaufwand im Projekt
 
