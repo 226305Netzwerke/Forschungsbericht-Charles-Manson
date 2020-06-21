@@ -1664,3 +1664,36 @@ Das Notebook ist unter [https://github.com/thomas5nolte/Manson/blob/master/22630
 |  Annika Stete|  37511|180 h|
 |  Rromina Trslic|  37510|180 h|
 |  Anna Veyhl|  36955|180 h|
+
+## Eidesstattliche Versicherung
+
+Hiermit versichern wir an Eides statt, dass wir den vorliegenden Projektbericht mit selbständig
+und ohne fremde Hilfe verfasst und keine anderen als die angegebenen Hilfsmittel
+benutzt haben. Die Stellen der Arbeit, die dem Wortlaut oder dem Sinne nach anderen
+Werken entnommen wurden, sind in jedem Fall unter Angabe der Quelle kenntlich
+gemacht. Die Arbeit ist noch nicht veröffentlicht oder in anderer Form als Prüfungsleistung
+vorgelegt worden.
+
+Wir haben die Bedeutung der eidesstattlichen Versicherung und prüfungsrechtlichen
+Folgen (§ 26 Abs. 2 Bachelor-SPO bzw. § 19 Abs. 2 Master-SPO der Hochschule der
+Medien Stuttgart) sowie die strafrechtlichen Folgen (siehe unten) einer unrichtigen oder
+unvollständigen eidesstattlichen Versicherung zur Kenntnis genommen.
+
+Auszug aus dem Strafgesetzbuch (StGB)
+
+§ 156 StGB Falsche Versicherung an Eides Statt
+
+Wer von einer zur Abnahme einer Versicherung an Eides Statt zuständigen Behörde
+eine solche Versicherung falsch abgibt oder unter Berufung auf eine solche Versicherung
+falsch aussagt, wird mit Freiheitsstrafe bis zu drei Jahren oder mit Geldstrafe bestraft.
+
+
+Stuttgart, 21.06.2020
+|  Name|  Unterschrift| 
+|:--:|:--:|
+|  Frederike Fuhrmann|![](https://raw.githubusercontent.com/226305Netzwerke/Forschungsbericht-Charles-Manson/master/Unterschriften/Unterschrift%20Fredi.PNG) |
+|  Eva McGowan| |
+|  Thomas Nolte| |
+|  Annika Stete| |
+|  Rromina Trslic|  |
+|  Anna Veyhl| |
