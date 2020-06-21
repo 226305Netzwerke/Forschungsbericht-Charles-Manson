@@ -1,19 +1,22 @@
+
+
+
+
 ---
 title: "226305 Forschungsbericht Charles Manson"
 author: "F. Fuhrmann, <br> E. McGowan, T. Nolte, A. Stete, R. Trslic, A. Veyhl"
 date: "22. Juni 2020"
-header-includes: 
-    - \usepackage[ngerman]{babel} 
-output: 
-  pdf_document: 
+output:
+  pdf_document:
     df_print: paged
-    toc: true
-    toc_depth: 3
+    toc: 1
     number_sections: true
-
+header-includes: \usepackage[ngerman]{babel}
 subtitle: Analyse des Beziehungsnetzwerks der Mansonfamilie
+highlight: tango
 
 ---
+
 ```{r setup}
 knitr::opts_chunk$set(echo = TRUE)
 options(max.print = 999999)
@@ -64,122 +67,124 @@ Wir gehen von folgenden Arbeitshyptothesen aus:
 Das Netzwerk von Charles Manson wurde bis dato so noch nicht untersucht oder visualisiert und stellt daher eine spannende Forschungslücke dar. Bereits bestehende Literatur zu verschiedenen Kriminalitätstheorien diente hierbei als grundlegende Orientierung, beispielsweise die Netzwerkanalyse zu dem Serienmörder Green River. So konnte ein erster allgemeiner Überblick über die Thematik geschaffen werden. Grundlage dafür war folgende Literatur:
 
 
-Bichler, Gisela; Lim, Steven; Larin, Edgar (2017). Tactical Social Network Analysis: Using Affiliation Networks to Aid Serial Homicide Investigation. In: Homicide Studies 21 (2), S. 133–158. DOI: 10.1177/1088767916671351
+> Bichler, Gisela; Lim, Steven; Larin, Edgar (2017). Tactical Social Network Analysis: Using Affiliation Networks to Aid Serial Homicide Investigation. In: Homicide Studies 21 (2), S. 133–158. DOI: 10.1177/1088767916671351
+> 
+> Cullen, F. T. & Wilcox, P. (2010). Encyclopedia of criminological theory (Vol. 1). Sage
 
-Cullen, F. T. & Wilcox, P. (2010). Encyclopedia of criminological theory (Vol. 1). Sage
 
 
 Im Anschluss war die Literatur zu Charles Manson zentral. In einem Zeitraum von drei Wochen der Winterferien des Wintersemesters 2019/2020 wurde eine Grundlage über Charles Manson und der von ihm angeführten “Manson Family”-Gruppierung erarbeitet. Die Ressourcen hierbei waren breit gefächert - von Podcasts über Bücher bis hin zu Videos und Filmen -  um einen möglichst großen Umfang erforschen und an Daten in unser Netzwerk aufnehmen zu können. Die Gruppengröße von sechs Personen erleichterte die Verteilung der Aufgabenpakete. Die Recherche erstreckte sich über das Leben von Charles Manson, das Leben und die Sichtweise anderer Manson-Family-Mitglieder und den Erkenntnissen aus bisherigen Untersuchungen im Fall Manson. Verwendet wurden dabei folgende Bücher: 
 
-Bugliosi, V., & Bugliosi, V. G. (2010). Helter Skelter - Der Mordrausch des Charles Manson: Eine Chronik des Grauens. Riva Verlag
-
-Greene, C. (1992). Der Fall Charles Manson, Mörder aus der Retorte. Wiesbaden: E.i.r.
-
-Lake, D., & Herman, D. (2017). Member of the Family: My Story of Charles Manson, Life Inside His Cult, and the Darkness That Ended the Sixties. New York, NY: William Morrow
-
-Watson, C. (1991). Bekenntnisse eines Mörders. Charles Manson... Sharon Tate...Hintergründe eines Massakers. Neuhausen-Stuttgart: Haenssler-Verlag GmbH
-
-Sanders, E. (2016). The Family (Deutsche Edition): Die Geschichte von Charles Manson und seiner Strand-Buggy-Bande. Fuego
-
-Surmava-Große, T. (2019). Charles Manson. In D. Frey (Hrsg.), Psychologie des Guten und Bösen: Licht- und Schattenfiguren der Menschheitsgeschichte—Biografien wissenschaftlich beleuchtet.
-
+> Bugliosi, V., & Bugliosi, V. G. (2010). Helter Skelter - Der Mordrausch des Charles Manson: Eine Chronik des Grauens. Riva Verlag
+> 
+> Greene, C. (1992). Der Fall Charles Manson, Mörder aus der Retorte. Wiesbaden: E.i.r.
+> 
+> Lake, D., & Herman, D. (2017). Member of the Family: My Story of Charles Manson, Life Inside His Cult, and the Darkness That Ended the Sixties. New York, NY: William Morrow
+> 
+> Watson, C. (1991). Bekenntnisse eines Mörders. Charles Manson... Sharon Tate...Hintergründe eines Massakers. Neuhausen-Stuttgart: Haenssler-Verlag GmbH
+> 
+> Sanders, E. (2016). The Family (Deutsche Edition): Die Geschichte von Charles Manson und seiner Strand-Buggy-Bande. Fuego
+> 
+> Surmava-Große, T. (2019). Charles Manson. In D. Frey (Hrsg.), Psychologie des Guten und Bösen: Licht- und Schattenfiguren der Menschheitsgeschichte—Biografien wissenschaftlich beleuchtet.
 
 
 Das Lesen der Bücher war mit einem großen Zeitaufwand verbunden, da die Literatur oft lückenhaft war und detaillierte Nachrecherche zu Textpassagen bzw. Personen betrieben werden musste. Dies erschwerte die Datenerhebung, da einige Daten schwer bis gar nicht auffindbar waren. Unter Anderem konnten wichtige Details über Verbindungen von Charles Manson und den Mitgliedern der Manson Family nicht ermittelt werden, da dafür der Zugriff fehlte oder dies nicht dokumentiert wurde. Dadurch kam es in der Datenerhebung zu ungewollten Lücken, die sich jedoch nicht verhindern ließen. 
 Ein weiteres Hindernis stellten die Zugriffsrechte auf die Gerichtsprotokolle dar. Um die subjektive Berichterstattung aus den Bücher zu mindern, war es nötig, eine Objektivität herzustellen. Da dieser Fall jedoch vor Jahrzehnten stattfand und zusätzlich in den USA, war es nicht möglich, einen Einblick in die damaligen Dokumente zu erhalten. Daher standen weitere Quellen im Fokus, um die Daten der Bücher zu vergleichen und gegebenenfalls zu vervollständigen:
 
 
-Biography.com Editors (2019): Charles Manson Biography (1934–2017), online verfügbar unter https://www.biography.com/crime-figure/charles-manson, zuletzt geprüft am 30.12.2019
+> Biography.com Editors (2019): Charles Manson Biography (1934–2017), online verfügbar unter https://www.biography.com/crime-figure/charles-manson, zuletzt geprüft am 30.12.2019
+> 
+> All That’s interesting (2016): Charles Manson Facts That Reveal The Man Behind The Monster. In: All That's Interesting, 14.03.2016. Online verfügbar unter https://allthatsinteresting.com/charles-manson-facts, zuletzt geprüft am 27.12.2019
+> 
+> All that’s interesting (2017): How Did Charles Manson Die And What Happened To His Body? In: All that’s interesting, 16.11.2017. Online verfügbar unter https://allthatsinteresting.com/charles-manson-death, zuletzt geprüft am 30.12.2019
+> 
+> Charles Manson Homepage (2020): Charles Manson. Online verfügbar unter https://www.charlesmanson.com/, zuletzt geprüft am 03.01.2020
 
-All That’s interesting (2016): Charles Manson Facts That Reveal The Man Behind The Monster. In: All That's Interesting, 14.03.2016. Online verfügbar unter https://allthatsinteresting.com/charles-manson-facts, zuletzt geprüft am 27.12.2019
-
-All that’s interesting (2017): How Did Charles Manson Die And What Happened To His Body? In: All that’s interesting, 16.11.2017. Online verfügbar unter https://allthatsinteresting.com/charles-manson-death, zuletzt geprüft am 30.12.2019
-
-Charles Manson Homepage (2020): Charles Manson. Online verfügbar unter https://www.charlesmanson.com/, zuletzt geprüft am 03.01.2020
 
 Die Webseite www.charlesmanson.com stellte ein entscheidende Quelle für die Datenerhebung von dem Netzwerk zu Charles Manson dar. Viele zuvor entstandene Lücken konnten dadurch geschlossen werden. Diese Webseite listet unter anderem alle Manson Family-Mitglieder auf, welche mit bereits recherchierten Quellen abgeglichen wurden. Einige wurden in Quellen erwähnt und nicht weiter aufgeführt, was zu Isolates im Netzwerk führte. Trotzdem war es bedeutend, diese Mitglieder aufzuführen, um die Dimension der Manson Family zu verdeutlichen. 
 
 Um weitere Recherche zu betreiben, wurden zusätzlich folgende Artikel bearbeitet:
 
-Bigalke, Silke & Sürig, Dieter (2014): Warum Massenmörder die Menschen faszinieren. In: Süddeutsche Zeitung, 21.02.2014. Online verfügbar unter https://www.sueddeutsche.de/panorama/bestseller-monster-warum-massenmoerder-die-menschen-faszinieren-1.1895132, zuletzt geprüft am 30.12.2019
+> Bigalke, Silke & Sürig, Dieter (2014): Warum Massenmörder die Menschen faszinieren. In: Süddeutsche Zeitung, 21.02.2014. Online verfügbar unter https://www.sueddeutsche.de/panorama/bestseller-monster-warum-massenmoerder-die-menschen-faszinieren-1.1895132, zuletzt geprüft am 30.12.2019
+> 
+> Deutschlandfunk (2017): Mörder und Sektenführer Charles Manson gestorben - "Ich bin alles, was schlecht ist" (20.11.2017). In: Deutschlandfunk Kultur website: Online verfügbar unter: https://www.deutschlandfunkkultur.de/moerder-und-sektenfuehrer-charles-manson-gestorben-ich-bin.2156.de.html?dram:article_id=401056, zuletzt geprüft am 03.01.2020
+> 
+> DER SPIEGEL: Massenmörder Charles Manson (o. J.). In: Der Spiegel, 6.8.2009. Online verfügbar unter https://www.spiegel.de/consent-a-?targetUrl=https%3A%2F%2Fwww.spiegel.de%2Fgeschichte%2Fmassenmoerder-charles-manson-a-948437.html, zuletzt geprüft am 27.12.2019
+> 
+> Dpa (2014): US-Sektenführer - Charles Manson will heiraten. In: Süddeutsche Zeitung, 18.11.2014. Online verfügbar unter https://www.sueddeutsche.de/panorama/amerikanischer-serienmoerder-charles-manson-will-heiraten-1.2225598, zuletzt geprüft am 03.01.2020
+> 
+> Dpa (2010): Vom Massenmörder zur Kultfigur. In: Süddeutsche Zeitung (17.05.2010). Online verfügbar unter https://www.sueddeutsche.de/panorama/charles-manson-und-amerika-vom-massenmoerder-zur-kultfigur-1.154180, zuletzt geprüft am 19.12.2019
+> 
+> Edition (2018): Judge decides grandson will get Charles Manson’s body—CNN. (13.03.2018). Online verfügbar unter: https://edition.cnn.com/2018/03/12/us/charles-manson-body-decision/index.html, zuletzt geprüft am 20.12.2019
+> 
+> Gasteiger, Carolin (2017): Charles Manson und Popkultur: der einzigen Verbündeten. In: Süddeutsche Zeitung, 20.11.2017. Online verfügbar unter https://www.sueddeutsche.de/kultur/zum-tod-von-charles-manson-duestere-ikone-der-popkultur-1.3367420, zuletzt geprüft am 30.12.2019
+> 
+> Gasteiger, Carolin (2019): Arte-Doku über Charles Manson - Größenwahn. In: Süddeutsche Zeitung, 30.08.2019. Online verfügbar unter https://www.sueddeutsche.de/medien/charles-manson-arte-doku-tom-o-dell-1.4576930, zuletzt geprüft am 03.01.2020
+> 
+> Häntzschel, Jörg (2011): Charles Manson, oberster Klimaschützer. In: Süddeutsche Zeitung, 19.04.2011. Online verfügbar unter https://www.sueddeutsche.de/panorama/sektenchef-interview-aus-dem-gefaengnis-charles-manson-oberster-klimaschuetzer-1.1087342, zuletzt geprüft am 30.12.2019
+> 
+> heise (2008): Der Elvis des Massenmords | Telepolis. (23.06.2008). In: heise. Online verfügbar unter https://www.heise.de/tp/features/Der-Elvis-des-Massenmords-3418841.html, zuletzt geprüft am 27.12.2019
+> 
+> Independent (2015) Manson wedding off after it emerges that his fiance just wanted his corpse for display. In: The Independent website, 09.02.2015. Online verfügbar unter http://www.independent.co.uk/news/people/charles-manson-wedding-off-after-it-emerges-that-girlfriend-afton-elaine-burton-just-wanted-his-10034793.html, zuletzt geprüft am 20.12.2019
+> 
+> Katzenberger, Paul (2013): Roman Polanski zum 80.Geburtstag - Schuld von allen Seiten. In: Süddeutsche Zeitung, 18.08.2013. Online verfügbar unter https://www.sueddeutsche.de/kultur/roman-polanski-zum-80-geburtstag-unverwuestlich-1.1744867, zuletzt geprüft am 03.01.2020
+> 
+> Krekeler, Elmar (2009): Literatur: Charles Manson und Roman Polanski treffen sich. In: WELT, 06.08.2009. Online verfügbar unter https://www.welt.de/kultur/literarischewelt/article10573701/Charles-Manson-und-Roman-Polanski-treffen-sich.html, zuletzt geprüft am 03.01.2020
+> 
+> Neue Züricher Zeitung (2019): Sekte: Frühere Manson-Anhängerin könnte aus Haft entlassen werden. In: NZZ, 31.01.2019. Online verfügbar unter: https://www.nzz.ch/panorama/fruehere-manson-anhaengerin-koennte-aus-haft-entlassen-werden-ld.1456102, zuletzt geprüft am 27.12.2019
+> 
+> The New York Times (1993): Charles Manson Gets Royalties on T-Shirts. In: The New York Times, 25.11.1993. Online verfügbar unter https://www.nytimes.com/1993/11/25/us/charles-manson-gets-royalties-on-t-shirts.html, zuletzt geprüft am 03.01.2020
+> 
+> ORF (2012): Charles Manson bleibt im Gefängnis. In: ORF, 11.04.2012. Online verfügbar unter https://orf.at/v2/stories/2114770/, zuletzt geprüft am 20.12.2019
+> 
+> Quora (2018): How did Charles Manson stay unharmed all those years in prison? Was he segregated or did he pay inmates for protection? In: Quora, 29.09.2018. Online verfügbar unter: https://www.quora.com/How-did-Charles-Manson-stay-unharmed-all-those-years-in-prison-Was-he-segregated-or-did-he-pay-inmates-for-protection, zuletzt geprüft am 20.12.2019
+> 
+> Düll, Helena (2017): Serienmörder Charles Manson starb an Herzstillstand. In: Rolling Stone, 12.12.2017. Online verfügbar unter:  https://www.rollingstone.de/serienmoerder-charles-manson-starb-an-herzstillstand-und-anderen-gesundheitlichen-problemen-1420949/, zuletzt geprüft am 03.01.2020
+> 
+> Schmieder, Jürgen (2019): LaBianca-Haus für zwei Millionen Dollar verkauft. In: Süddeutsche Zeitung, 29.07.2019. Online verfügbar unter https://www.sueddeutsche.de/panorama/labianca-charles-manson-1.4542539, zuletzt geprüft am 30.12.2019
+> 
+> Süddeutsche Zeitung (2017): Charles Manson ist tot. In: Süddeutsche Zeitung, 20.11.2017. Online verfügbar unter https://www.sueddeutsche.de/panorama/usa-charles-manson-ist-tot-1.3757046, zuletzt geprüft am 30.12.2019
+> 
+> Süddeutsche Zeitung (2012): Charles Manson scheitert mit zwölftem Gnadengesuch. In: Süddeutsche Zeitung, 12.04.2012. Online verfügbar unter https://www.sueddeutsche.de/panorama/verurteilter-us-serienmoerder-charles-manson-scheitert-mit-zwoelftem-gnadengesuch-1.1330531, zuletzt geprüft am 27.12.2019
+> 
+> Süddeutsche Zeitung (2012): Bücher über Geisterstädte - Cowboys und Gespenster. In: Süddeutsche Zeitung, 30.07.2012. Online verfügbar unter https://www.sueddeutsche.de/kultur/buecher-ueber-geisterstaedte-cowboys-und-gespenster-1.1426012, zuletzt geprüft am 27.12.2019
+> 
+> Süddeutsche Zeitung (2012): Anhänger des US-Serienmörders Charles Manson. In: Süddeutsche Zeitung, 05.10.2012. Online verfügbar unter https://www.sueddeutsche.de/panorama/bruce-davis-anhaenger-des-us-serienmoerders-charles-manson-soll-freigelassen-werden-1.1487862, zuletzt geprüft am 27.12.2019
+> 
+> Web (2009): Die Zeugenaussage von Charles Manson. In: web.de, 19.12.2009. Online verfügbar unter:  https://web.archive.org/web/20091212100142/http://serien-killer.com/000000968e11c0e2b/53735996aa0cb7301/00000096900132506/537359974c043ee01.html, zuletzt geprüft am 20.12.2019
+> 
+> Welt (2014): Kriminalität: Mörder Charles Manson darf 26-Jährige heiraten. In: WELT, 18.11.2014. Online verfügbar unter: https://www.welt.de/vermischtes/article134443472/Moerder-Charles-Manson-darf-26-Jaehrige-heiraten.html, zuletzt geprüft am 30.12.2019
+> 
+> Welt (2017): Satanist, Kultführer, Mörder: Wie Charles-Manson zur Pop-Ikone wurde. In: WELT, 20.11.2017. Online verfügbar unter https://www.welt.de/vermischtes/article170773185/Wie-Charles-Manson-zur-Pop-Ikone-begnadigt-wurde.html, zuletzt geprüft am 20.12.2019
+> 
+> Welt (2009): Charles Manson und Roman Polanski treffen sich. In: WELT, 06.08.2009. Online verfügbar unter https://www.welt.de/kultur/literarischewelt/article10573701/Charles-Manson-und-Roman-Polanski-treffen-sich.html, zuletzt geprüft am 27.12.2019
+> 
+> Winkler, Willi (2014): Mitglied der Manson-Bande - Zweite Erleuchtung. In: Süddeutsche Zeitung, 08.08.2014. Online verfügbar unter https://www.sueddeutsche.de/kultur/mitglied-der-manson-bande-aeussert-sich-die-zweite-erleuchtung-1.2080738, zuletzt geprüft am 30.12.2019
+> 
+> Winkler, Willi (2017): Schwarzschillerndes Monster. In: Süddeutsche Zeitung, 20.11.2017. Online verfügbar unter https://www.sueddeutsche.de/panorama/charles-manson-schwarzschillerndes-monster-1.3757243, zuletzt geprüft am 27.12.2019
 
-Deutschlandfunk (2017): Mörder und Sektenführer Charles Manson gestorben - "Ich bin alles, was schlecht ist" (20.11.2017). In: Deutschlandfunk Kultur website: Online verfügbar unter: https://www.deutschlandfunkkultur.de/moerder-und-sektenfuehrer-charles-manson-gestorben-ich-bin.2156.de.html?dram:article_id=401056, zuletzt geprüft am 03.01.2020
-
-DER SPIEGEL: Massenmörder Charles Manson (o. J.). In: Der Spiegel, 6.8.2009. Online verfügbar unter https://www.spiegel.de/consent-a-?targetUrl=https%3A%2F%2Fwww.spiegel.de%2Fgeschichte%2Fmassenmoerder-charles-manson-a-948437.html, zuletzt geprüft am 27.12.2019
-
-Dpa (2014): US-Sektenführer - Charles Manson will heiraten. In: Süddeutsche Zeitung, 18.11.2014. Online verfügbar unter https://www.sueddeutsche.de/panorama/amerikanischer-serienmoerder-charles-manson-will-heiraten-1.2225598, zuletzt geprüft am 03.01.2020
-
-Dpa (2010): Vom Massenmörder zur Kultfigur. In: Süddeutsche Zeitung (17.05.2010). Online verfügbar unter https://www.sueddeutsche.de/panorama/charles-manson-und-amerika-vom-massenmoerder-zur-kultfigur-1.154180, zuletzt geprüft am 19.12.2019
-
-Edition (2018): Judge decides grandson will get Charles Manson’s body—CNN. (13.03.2018). Online verfügbar unter: https://edition.cnn.com/2018/03/12/us/charles-manson-body-decision/index.html, zuletzt geprüft am 20.12.2019
-
-Gasteiger, Carolin (2017): Charles Manson und Popkultur: der einzigen Verbündeten. In: Süddeutsche Zeitung, 20.11.2017. Online verfügbar unter https://www.sueddeutsche.de/kultur/zum-tod-von-charles-manson-duestere-ikone-der-popkultur-1.3367420, zuletzt geprüft am 30.12.2019
-
-Gasteiger, Carolin (2019): Arte-Doku über Charles Manson - Größenwahn. In: Süddeutsche Zeitung, 30.08.2019. Online verfügbar unter https://www.sueddeutsche.de/medien/charles-manson-arte-doku-tom-o-dell-1.4576930, zuletzt geprüft am 03.01.2020
-
-Häntzschel, Jörg (2011): Charles Manson, oberster Klimaschützer. In: Süddeutsche Zeitung, 19.04.2011. Online verfügbar unter https://www.sueddeutsche.de/panorama/sektenchef-interview-aus-dem-gefaengnis-charles-manson-oberster-klimaschuetzer-1.1087342, zuletzt geprüft am 30.12.2019
-
-heise (2008): Der Elvis des Massenmords | Telepolis. (23.06.2008). In: heise. Online verfügbar unter https://www.heise.de/tp/features/Der-Elvis-des-Massenmords-3418841.html, zuletzt geprüft am 27.12.2019
-
-Independent (2015) Manson wedding off after it emerges that his fiance just wanted his corpse for display. In: The Independent website, 09.02.2015. Online verfügbar unter http://www.independent.co.uk/news/people/charles-manson-wedding-off-after-it-emerges-that-girlfriend-afton-elaine-burton-just-wanted-his-10034793.html, zuletzt geprüft am 20.12.2019
-
-Katzenberger, Paul (2013): Roman Polanski zum 80.Geburtstag - Schuld von allen Seiten. In: Süddeutsche Zeitung, 18.08.2013. Online verfügbar unter https://www.sueddeutsche.de/kultur/roman-polanski-zum-80-geburtstag-unverwuestlich-1.1744867, zuletzt geprüft am 03.01.2020
-
-Krekeler, Elmar (2009): Literatur: Charles Manson und Roman Polanski treffen sich. In: WELT, 06.08.2009. Online verfügbar unter https://www.welt.de/kultur/literarischewelt/article10573701/Charles-Manson-und-Roman-Polanski-treffen-sich.html, zuletzt geprüft am 03.01.2020
-
-Neue Züricher Zeitung (2019): Sekte: Frühere Manson-Anhängerin könnte aus Haft entlassen werden. In: NZZ, 31.01.2019. Online verfügbar unter: https://www.nzz.ch/panorama/fruehere-manson-anhaengerin-koennte-aus-haft-entlassen-werden-ld.1456102, zuletzt geprüft am 27.12.2019
-
-The New York Times (1993): Charles Manson Gets Royalties on T-Shirts. In: The New York Times, 25.11.1993. Online verfügbar unter https://www.nytimes.com/1993/11/25/us/charles-manson-gets-royalties-on-t-shirts.html, zuletzt geprüft am 03.01.2020
-
-ORF (2012): Charles Manson bleibt im Gefängnis. In: ORF, 11.04.2012. Online verfügbar unter https://orf.at/v2/stories/2114770/, zuletzt geprüft am 20.12.2019
-
-Quora (2018): How did Charles Manson stay unharmed all those years in prison? Was he segregated or did he pay inmates for protection? In: Quora, 29.09.2018. Online verfügbar unter: https://www.quora.com/How-did-Charles-Manson-stay-unharmed-all-those-years-in-prison-Was-he-segregated-or-did-he-pay-inmates-for-protection, zuletzt geprüft am 20.12.2019
-
-Düll, Helena (2017): Serienmörder Charles Manson starb an Herzstillstand. In: Rolling Stone, 12.12.2017. Online verfügbar unter:  https://www.rollingstone.de/serienmoerder-charles-manson-starb-an-herzstillstand-und-anderen-gesundheitlichen-problemen-1420949/, zuletzt geprüft am 03.01.2020
-
-Schmieder, Jürgen (2019): LaBianca-Haus für zwei Millionen Dollar verkauft. In: Süddeutsche Zeitung, 29.07.2019. Online verfügbar unter https://www.sueddeutsche.de/panorama/labianca-charles-manson-1.4542539, zuletzt geprüft am 30.12.2019
-
-Süddeutsche Zeitung (2017): Charles Manson ist tot. In: Süddeutsche Zeitung, 20.11.2017. Online verfügbar unter https://www.sueddeutsche.de/panorama/usa-charles-manson-ist-tot-1.3757046, zuletzt geprüft am 30.12.2019
-
-Süddeutsche Zeitung (2012): Charles Manson scheitert mit zwölftem Gnadengesuch. In: Süddeutsche Zeitung, 12.04.2012. Online verfügbar unter https://www.sueddeutsche.de/panorama/verurteilter-us-serienmoerder-charles-manson-scheitert-mit-zwoelftem-gnadengesuch-1.1330531, zuletzt geprüft am 27.12.2019
-
-Süddeutsche Zeitung (2012): Bücher über Geisterstädte - Cowboys und Gespenster. In: Süddeutsche Zeitung, 30.07.2012. Online verfügbar unter https://www.sueddeutsche.de/kultur/buecher-ueber-geisterstaedte-cowboys-und-gespenster-1.1426012, zuletzt geprüft am 27.12.2019
-
-Süddeutsche Zeitung (2012): Anhänger des US-Serienmörders Charles Manson. In: Süddeutsche Zeitung, 05.10.2012. Online verfügbar unter https://www.sueddeutsche.de/panorama/bruce-davis-anhaenger-des-us-serienmoerders-charles-manson-soll-freigelassen-werden-1.1487862, zuletzt geprüft am 27.12.2019
-
-Web (2009): Die Zeugenaussage von Charles Manson. In: web.de, 19.12.2009. Online verfügbar unter:  https://web.archive.org/web/20091212100142/http://serien-killer.com/000000968e11c0e2b/53735996aa0cb7301/00000096900132506/537359974c043ee01.html, zuletzt geprüft am 20.12.2019
-
-Welt (2014): Kriminalität: Mörder Charles Manson darf 26-Jährige heiraten. In: WELT, 18.11.2014. Online verfügbar unter: https://www.welt.de/vermischtes/article134443472/Moerder-Charles-Manson-darf-26-Jaehrige-heiraten.html, zuletzt geprüft am 30.12.2019
-
-Welt (2017): Satanist, Kultführer, Mörder: Wie Charles-Manson zur Pop-Ikone wurde. In: WELT, 20.11.2017. Online verfügbar unter https://www.welt.de/vermischtes/article170773185/Wie-Charles-Manson-zur-Pop-Ikone-begnadigt-wurde.html, zuletzt geprüft am 20.12.2019
-
-Welt (2009): Charles Manson und Roman Polanski treffen sich. In: WELT, 06.08.2009. Online verfügbar unter https://www.welt.de/kultur/literarischewelt/article10573701/Charles-Manson-und-Roman-Polanski-treffen-sich.html, zuletzt geprüft am 27.12.2019
-
-Winkler, Willi (2014): Mitglied der Manson-Bande - Zweite Erleuchtung. In: Süddeutsche Zeitung, 08.08.2014. Online verfügbar unter https://www.sueddeutsche.de/kultur/mitglied-der-manson-bande-aeussert-sich-die-zweite-erleuchtung-1.2080738, zuletzt geprüft am 30.12.2019
-
-Winkler, Willi (2017): Schwarzschillerndes Monster. In: Süddeutsche Zeitung, 20.11.2017. Online verfügbar unter https://www.sueddeutsche.de/panorama/charles-manson-schwarzschillerndes-monster-1.3757243, zuletzt geprüft am 27.12.2019
 
 
 Um den Limitationen eines einzelnen Mediums zu entgehen, entschieden wir uns zusätzlich noch Dokumentationen in Form von Videos in die Datenerhebung mit einzubeziehen: 
 
 
-DokuDomi. (25. Januar 2019): Der brutalste Serienmörder Amerikas | Dokumentation 2019/HD, abgerufen von https://www.youtube.com/watch?v=iAu1Mc0KqJk
+> DokuDomi. (25. Januar 2019): Der brutalste Serienmörder Amerikas | Dokumentation 2019/HD, abgerufen von https://www.youtube.com/watch?v=iAu1Mc0KqJk
+> 
+> SerienkillerUSA. (25. März 2013): Amerikas Albtraum - Die gefährlichsten Serienkiller der USA - E08 - Charles Manson (2009), abgerufen von: https://www.youtube.com/watch?v=UMaZ3QKz8EQ
+> 
+> McIntosh, S., Heyman, D. & Tarantino, Q (2019): Once upon a time in Hollywood. United States, United Kingdom: Columbia Pictures
+> Peter HH. (24. Februar 2013): Charles Manson - Dianne Sawyer Documentary, abgerufen von https://www.youtube.com/watch?v=v4qZB2ytq10
 
-SerienkillerUSA. (25. März 2013): Amerikas Albtraum - Die gefährlichsten Serienkiller der USA - E08 - Charles Manson (2009), abgerufen von: https://www.youtube.com/watch?v=UMaZ3QKz8EQ
-
-McIntosh, S., Heyman, D. & Tarantino, Q (2019): Once upon a time in Hollywood. United States, United Kingdom: Columbia Pictures
-Peter HH. (24. Februar 2013): Charles Manson - Dianne Sawyer Documentary, abgerufen von https://www.youtube.com/watch?v=v4qZB2ytq10
 
 
 Sowie Podcasts:
 
 
-Cutler Media LLC (2018 - heute). “The Manson Family” - Charles Manson (Part 1 - Part 2) - Cults.
-
-https://podcasts.apple.com/de/podcast/cults/id1286818575?i=1000392611111 
-
-https://podcasts.apple.com/de/podcast/cults/id1286818575?i=1000392611110
-
+> Cutler Media LLC (2018 - heute). “The Manson Family” - Charles Manson (Part 1 - Part 2) - Cults.
+> 
+> https://podcasts.apple.com/de/podcast/cults/id1286818575?i=1000392611111 
+> 
+> https://podcasts.apple.com/de/podcast/cults/id1286818575?i=1000392611110
 
 
 Alle erhobenen Daten wurden von den Gruppenmitgliedern in die Google-Spreadsheets Edge- und Nodelist übertragen. Da vor Beginn des Datenerhebungsprozesses ein klares Codebuch definiert wurde, konnten bedeutende Daten der Akteure im Netzwerk festgehalten werden. Darunter personenbezogenen Daten und Daten zu Beziehungen der Akteure untereinander. Zusätzliche Informationen wurden in einer weiteren Spalte notiert, um wichtige Details, welche im Codebuch kein Platz fanden, nicht auszuklammern. Regelmäßige Teammeetings und kurze Absprachen ermöglichten zudem ein gemeinschaftliches Verständnis des Falles Charles Manson und der Manson Family innerhalb des Teams. Bei offenen, noch zu klärenden Fragen wurden diese vom jeweiligen Gruppenmitglied notiert und im nächsten Teammeeting angesprochen. 
@@ -1689,12 +1694,4 @@ falsch aussagt, wird mit Freiheitsstrafe bis zu drei Jahren oder mit Geldstrafe 
 
 
 Stuttgart, 21.06.2020
-![](https://raw.githubusercontent.com/226305Netzwerke/Forschungsbericht-Charles-Manson/master/Unterschriften/Unterschrift-Fuhrmann.PNG)
-|  Name|  Unterschrift| 
-|--:|--:|
-|  Frederike Fuhrmann|![](https://raw.githubusercontent.com/226305Netzwerke/Forschungsbericht-Charles-Manson/master/Unterschriften/Unterschrift-Fuhrmann.PNG) |
-|  Eva McGowan| |
-|  Thomas Nolte| |
-|  Annika Stete| |
-|  Rromina Trslic|  |
-|  Anna Veyhl| |
+
