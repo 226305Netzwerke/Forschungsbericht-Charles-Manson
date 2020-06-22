@@ -1,13 +1,13 @@
 ---
 title: "226305 Forschungsbericht Charles Manson"
-author: "F. Fuhrmann, <br> E. McGowan, T. Nolte, A. Stete, R. Trslic, A. Veyhl"
+author: "F. Fuhrmann, E. McGowan, T. Nolte, A. Stete, R. Trslic, A. Veyhl"
 date: "22. Juni 2020"
 output:
   pdf_document:
-    df_print: paged
-    toc: 1
+    toc: true
+    toc_depth: 3
     number_sections: true
-    highlight: tango
+
 subtitle: Analyse des Beziehungsnetzwerks der Mansonfamilie
 header-includes: \usepackage[ngerman]{babel}
 ---
@@ -28,17 +28,14 @@ Der nachfolgende Forschungsbericht untersucht das Beziehungsnetzwerk von Charles
 
 Keywords: Netzwerkanalyse, Teilnetzwerke, Serienmörder, Kriminalitätsmustertheorie
 
-
-# Beschreibung des Themenfeldes
-
-Im Jahr 1969 kam es in Kalifornien innerhalb von zwei Tagen zum siebenfachen Mord. Diese sind bis heute unter den Namen LaBianca- und Tate-Morde bekannt. Unter der Führung von Charles Manson wurden die Morde von der Manson-Family, eine sektenähnliche Kommune, begangen. In unserer Netzwerkforschung soll Charles Manson als Ego-Netzwerk untersucht werden. Außerdem sollen seine Verbindungen zur Manson-Familiy und zu den Opfern analysiert werden (1967-1969). 
-
-
 # Einleitung
-In unseren Augen sind die Netzwerke von Kriminellen sehr interessant. 
-Die Mansonfamilie war eine Gruppe junger Frauen und Männer um die namensgebende Person Charles Manson. Sie begingen in den 60er Jahren Morde in Großraum Los Angeles. Die Größe der Mansonfamilie varriierte im laufe der Jahre, die meisten Mitglieder waren unter 30 Jahre alt begingen aber mehrere Morde. Bei Charles Manson ist eine Netzwerk-Analyse besonders spannend, da sämtliche Handlungen der Manson-Family von ihm aus gesteuert wurden. Wir untersuchen Charles Manson als Hauptakteur und bilden ein Ego-Netzwerk ab. Dabei setzen wir einen klaren Fokus auf die Beziehungsebene. Wir sind motiviert, die verschiedenen Stärken der Beziehungen zwischen Charles Manson und den Mitgliedern der Manson-Family herauszuarbeiten. Es gilt herauszufinden, welche Mitglieder besonders eng mit ihm in Verbindung standen, da die Annahme besteht, dass Mitglieder stark durch Manson beeinflusst und durch ihn zum morden animiert wurden. Hierbei ist interessant, ob es auch unter den Mitgliedern zentrale Akteure gab, die eng miteinander verbunden waren. Ebenso möchten wir analysieren, wie Charles Manson und die Manson-Family in Verbindung mit ihren Opfern stand. 
 
-Es gibt wenig verlässliche Literatur über die Mansonfamilie, welche Gruppe insgesamt thematisiert. Die vorhandene Literatur ist meist aus der Sichtweise einer einzelne Person geschrieben, welches die Literatur dadurch subjektiv gestaltet. Auch gibt es wenig aktuelle Forschung darüber, aus welchen Gründen Charles Manson eine solche Macht ausstrahlen konnte.  
+Die Manson Family - Eine Gruppe junger Frauen und Männer gebildet um Charles Manson. In den 60er Jahren werden sie durch ihre grausamen Morde berühmt, die ganz Hollywood erschütterten. Diese sind bis heute unter den Namen LaBianca- und Tate-Morde bekannt. Das perfide: Charles Manson ermordete keines dieser Opfer selbst. Er beeinflusste die Mitglieder der Manson Family so stark, dass sie selbst zu grausamen Taten bereit waren und seine Vorstellungen für ihn umsetzten. 
+
+Charles Manson wuchs in schwierigen Familienverhältnissen ohne Vater in Cincinnati, Ohio, auf. Von seiner Mutter verstoßen landete Manson bereits in jungen Jahren auf der Straße und geriet früh auf die kriminelle Bahn. Immer wieder saß er kurze Haftstrafen für kleinere Delikte ab, bis er um 1960 die Manson Family gründete. Von da an wuchs die sektenähnliche Gruppierung stetig und wurde zu einer der bekanntesten der USA. Bis heute beschäftigen sich Menschen mit den brutalen Handlungen der Manson Family.
+
+Seither wurde keine Netzwerkanalyse zu Charles Manson und seiner Family durchgeführt und stellt somit eine Forschungslücke dar. Charles Manson wird als Hauptakteur untersucht und bildet das Ego im Netzwerk. Dabei liegt der Fokus auf den verschiedenen Beziehungen im Manson Family- und dessen Teilnetzwerken. Insbesondere sollen die Verbindungen zwischen Charles Manson und seinen Mitgliedern herausgearbeitet werden. 
+
 
 # Forschungsstand
 
@@ -59,7 +56,7 @@ Wir gehen von folgenden Arbeitshyptothesen aus:
 
 # Datenerhebung:
 
-Das Netzwerk von Charles Manson wurde bis dato so noch nicht untersucht oder visualisiert und stellt daher eine spannende Forschungslücke dar. Bereits bestehende Literatur zu verschiedenen Kriminalitätstheorien diente hierbei als grundlegende Orientierung, beispielsweise die Netzwerkanalyse zu dem Serienmörder Green River. So konnte ein erster allgemeiner Überblick über die Thematik geschaffen werden. Grundlage dafür war folgende Literatur:
+Das Netzwerk von Charles Manson wurde bis dato so noch nicht untersucht oder visualisiert. Bereits bestehende Literatur zu verschiedenen Kriminalitätstheorien diente hierbei als grundlegende Orientierung, beispielsweise die Netzwerkanalyse zu dem Serienmörder Green River. So konnte ein erster allgemeiner Überblick über die Thematik geschaffen werden. Grundlage dafür war folgende Literatur:
 
 
 > Bichler, Gisela; Lim, Steven; Larin, Edgar (2017). Tactical Social Network Analysis: Using Affiliation Networks to Aid Serial Homicide Investigation. In: Homicide Studies 21 (2), S. 133–158. DOI: 10.1177/1088767916671351
@@ -68,7 +65,7 @@ Das Netzwerk von Charles Manson wurde bis dato so noch nicht untersucht oder vis
 
 
 
-Im Anschluss war die Literatur zu Charles Manson zentral. In einem Zeitraum von drei Wochen der Winterferien des Wintersemesters 2019/2020 wurde eine Grundlage über Charles Manson und der von ihm angeführten “Manson Family”-Gruppierung erarbeitet. Die Ressourcen hierbei waren breit gefächert - von Podcasts über Bücher bis hin zu Videos und Filmen -  um einen möglichst großen Umfang erforschen und an Daten in unser Netzwerk aufnehmen zu können. Die Gruppengröße von sechs Personen erleichterte die Verteilung der Aufgabenpakete. Die Recherche erstreckte sich über das Leben von Charles Manson, das Leben und die Sichtweise anderer Manson-Family-Mitglieder und den Erkenntnissen aus bisherigen Untersuchungen im Fall Manson. Verwendet wurden dabei folgende Bücher: 
+Im Anschluss war die Literatur zu Charles Manson zentral. In einem Zeitraum von drei Wochen der Winterferien des Wintersemesters 2019/2020 wurde eine Grundlage über Charles Manson und der von ihm angeführten “Manson Family”-Gruppierung erarbeitet. Die Ressourcen hierbei waren breit gefächert - von Podcasts über Bücher bis hin zu Videos und Filmen -  um einen möglichst großen Umfang erforschen und an Daten in unser Netzwerk aufnehmen zu können. Die Gruppengröße von sechs Personen erleichterte die Verteilung der Aufgabenpakete. Die Recherche erstreckte sich über das Leben von Charles Manson, das Leben und die Sichtweise anderer Manson Family-Mitglieder und den Erkenntnissen aus bisherigen Untersuchungen im Fall Manson. Verwendet wurden dabei folgende Bücher: 
 
 > Bugliosi, V., & Bugliosi, V. G. (2010). Helter Skelter - Der Mordrausch des Charles Manson: Eine Chronik des Grauens. Riva Verlag
 > 
@@ -83,8 +80,10 @@ Im Anschluss war die Literatur zu Charles Manson zentral. In einem Zeitraum von 
 > Surmava-Große, T. (2019). Charles Manson. In D. Frey (Hrsg.), Psychologie des Guten und Bösen: Licht- und Schattenfiguren der Menschheitsgeschichte—Biografien wissenschaftlich beleuchtet.
 
 
-Das Lesen der Bücher war mit einem großen Zeitaufwand verbunden, da die Literatur oft lückenhaft war und detaillierte Nachrecherche zu Textpassagen bzw. Personen betrieben werden musste. Dies erschwerte die Datenerhebung, da einige Daten schwer bis gar nicht auffindbar waren. Unter Anderem konnten wichtige Details über Verbindungen von Charles Manson und den Mitgliedern der Manson Family nicht ermittelt werden, da dafür der Zugriff fehlte oder dies nicht dokumentiert wurde. Dadurch kam es in der Datenerhebung zu ungewollten Lücken, die sich jedoch nicht verhindern ließen. 
+Das Lesen der Bücher war mit einem großen Zeitaufwand verbunden, da die Literatur oft lückenhaft war und eine detaillierte Nachrecherche zu Textpassagen bzw. Personen betrieben werden musste. Unter Anderem konnten wichtige Details über Verbindungen von Charles Manson und den Mitgliedern der Manson Family nicht ermittelt werden, da dafür der Zugriff fehlte oder dies nicht dokumentiert wurde. Dadurch kam es in der Datenerhebung zu ungewollten Lücken, die sich jedoch nicht verhindern ließen. 
+
 Ein weiteres Hindernis stellten die Zugriffsrechte auf die Gerichtsprotokolle dar. Um die subjektive Berichterstattung aus den Bücher zu mindern, war es nötig, eine Objektivität herzustellen. Da dieser Fall jedoch vor Jahrzehnten stattfand und zusätzlich in den USA, war es nicht möglich, einen Einblick in die damaligen Dokumente zu erhalten. Daher standen weitere Quellen im Fokus, um die Daten der Bücher zu vergleichen und gegebenenfalls zu vervollständigen:
+
 
 
 > Biography.com Editors (2019): Charles Manson Biography (1934–2017), online verfügbar unter https://www.biography.com/crime-figure/charles-manson, zuletzt geprüft am 30.12.2019
@@ -96,7 +95,7 @@ Ein weiteres Hindernis stellten die Zugriffsrechte auf die Gerichtsprotokolle da
 > Charles Manson Homepage (2020): Charles Manson. Online verfügbar unter https://www.charlesmanson.com/, zuletzt geprüft am 03.01.2020
 
 
-Die Webseite www.charlesmanson.com stellte ein entscheidende Quelle für die Datenerhebung von dem Netzwerk zu Charles Manson dar. Viele zuvor entstandene Lücken konnten dadurch geschlossen werden. Diese Webseite listet unter anderem alle Manson Family-Mitglieder auf, welche mit bereits recherchierten Quellen abgeglichen wurden. Einige wurden in Quellen erwähnt und nicht weiter aufgeführt, was zu Isolates im Netzwerk führte. Trotzdem war es bedeutend, diese Mitglieder aufzuführen, um die Dimension der Manson Family zu verdeutlichen. 
+Die Webseite www.charlesmanson.com stellte eine entscheidende Quelle für die Datenerhebung von dem Netzwerk zu Charles Manson dar. Viele zuvor entstandenen Lücken konnten dadurch geschlossen werden. Diese Webseite listet unter anderem alle Manson Family-Mitglieder auf, welche mit bereits recherchierten Quellen abgeglichen wurden. Einige wurden in Quellen erwähnt und nicht weiter aufgeführt, was zu Isolates im Netzwerk führte. Trotzdem war es bedeutend, diese Mitglieder aufzuführen, um die Dimension der Manson Family zu verdeutlichen.
 
 Um weitere Recherche zu betreiben, wurden zusätzlich folgende Artikel bearbeitet:
 
@@ -181,8 +180,7 @@ Sowie Podcasts:
 > 
 > https://podcasts.apple.com/de/podcast/cults/id1286818575?i=1000392611110
 
-
-Alle erhobenen Daten wurden von den Gruppenmitgliedern in die Google-Spreadsheets Edge- und Nodelist übertragen. Da vor Beginn des Datenerhebungsprozesses ein klares Codebuch definiert wurde, konnten bedeutende Daten der Akteure im Netzwerk festgehalten werden. Darunter personenbezogenen Daten und Daten zu Beziehungen der Akteure untereinander. Zusätzliche Informationen wurden in einer weiteren Spalte notiert, um wichtige Details, welche im Codebuch kein Platz fanden, nicht auszuklammern. Regelmäßige Teammeetings und kurze Absprachen ermöglichten zudem ein gemeinschaftliches Verständnis des Falles Charles Manson und der Manson Family innerhalb des Teams. Bei offenen, noch zu klärenden Fragen wurden diese vom jeweiligen Gruppenmitglied notiert und im nächsten Teammeeting angesprochen. 
+Alle erhobenen Daten wurden von den Gruppenmitgliedern in die Google-Spreadsheets Edge- und Nodelist übertragen. Da vor Beginn des Datenerhebungsprozesses ein klares Codebuch definiert wurde, konnten bedeutende Daten der Akteure im Netzwerk festgehalten werden. Darunter personenbezogenen Daten und Daten zu Beziehungen der Akteure untereinander. Zusätzliche Informationen wurden in einer weiteren Spalte notiert, um wichtige Details, welche im Codebuch keinen Platz fanden, nicht auszuklammern. Regelmäßige Teammeetings und kurze Absprachen ermöglichten zudem ein gemeinschaftliches Verständnis des Falles Charles Manson und der Manson Family innerhalb des Teams. Bei offenen, noch zu klärenden Fragen wurden diese vom jeweiligen Gruppenmitglied notiert und im nächsten Teammeeting angesprochen. 
 
 ##  Zugang
 Die Materialien für unsere Netzwerkanalyse haben wir breit gefächert ausgewählt, sodass wir eine möglichst große Überschneidung der Ergebnisse erzielen können. Dies gewährleistet eine Kontinuität in der subjektiv dokumentierten Thematik. 
